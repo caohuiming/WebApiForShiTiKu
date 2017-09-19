@@ -11,7 +11,7 @@ namespace WebApiForShiTiKu.Controllers
         // GET: Test
         public ActionResult Index()
         {
-            int a = 3;
+            int a = 4;
             return View();
         }
     }
