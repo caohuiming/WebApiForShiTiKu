@@ -14,7 +14,7 @@
 
 # Build results
 [Dd]ebug/
-[Dd]ebugPublic/
+[Dd]ebugPublic/c
 [Rr]elease/
 [Rr]eleases/
 x64/
@@ -299,4 +299,3 @@ __pycache__/
 *.xsd.cs
 
 # OpenCover UI analysis results
-OpenCover/
