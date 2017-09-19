@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+        //var userInfo = { "UserName": "chm", "Age": 3 };
+        var data = {};
+        $(function () {
+            $("#btnTest").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:62755/api/ShiJuan/GetAllEnableShiJuan",
+                    data:data,
+                    success: function (data) {
+                        alert(data.length);
+                        for (var i = 0; i < data.length; i++) {
+                            alert(data[i].shiJuanName);
+                        }
+                    }
+                });
+            });
+        });
+</script>
+
+<div>
+    <input type="button" id="btnTest" value="test" />
+</div>
+
